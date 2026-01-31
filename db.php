@@ -1,6 +1,7 @@
 <?php
 // Enable error reporting for debugging
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
+echo "<!-- DEBUG: Inside db.php -->\n";
 
 $servername = getenv("DB_HOST");
 $username = getenv("DB_USER");

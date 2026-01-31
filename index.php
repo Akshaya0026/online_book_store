@@ -1,9 +1,17 @@
-<?php
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
+echo "<!-- DEBUG: Script Started -->\n";
+flush();
+
+if (!file_exists('db.php')) {
+die("Error: db.php not found!");
+}
+
+echo "<!-- DEBUG: Including db.php -->\n";
 include 'db.php';
+echo "<!-- DEBUG: db.php included -->\n";
 ?>
 <!DOCTYPE html>
 <html lang="en">
